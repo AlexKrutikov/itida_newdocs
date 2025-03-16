@@ -1,0 +1,11 @@
+:root {
+    --vp-layout-max-width: 1856px;
+}
+
+:lang(ru) {
+    --vp-code-copy-copied-text-content: 'Скопировано';
+}
+
+.VPDoc .content-container {
+    max-width: 1856px!important;
+}
