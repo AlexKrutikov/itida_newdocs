@@ -1,17 +1,35 @@
-:root {
-    --vp-layout-max-width: 1856px;
-}
-
 :lang(ru) {
     --vp-code-copy-copied-text-content: 'Скопировано';
 }
 
-.VPDoc .content-container {
-    max-width: 1856px!important;
+:root {
+    --vp-layout-max-width: 768px !important;
 }
 
-@media screen and (max-width: 1856px) {
+.VPDoc .content-container {
+    max-width: var(--vp-layout-max-width) !important;
+}
+
+@media (min-width: 768px) {
     :root {
-        --vp-layout-max-width: 1440px!important;
+        --vp-layout-max-width: 768px !important;
+    }
+}
+
+@media (min-width: 1440px) {
+    :root {
+        --vp-layout-max-width: 1440px !important;
+    }
+}
+
+@media (min-width: 1856px) {
+    :root {
+        --vp-layout-max-width: 1856px !important;
+    }
+}
+
+@media (min-width: 2560px) {
+    :root {
+        --vp-layout-max-width: 2560px !important;
     }
 }

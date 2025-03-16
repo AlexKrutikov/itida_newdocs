@@ -36,7 +36,13 @@ export default defineConfig({
     darkModeSwitchTitle: 'Включить темную тему',
     outlineTitle: 'На этой странице',
 
-    
+    lastUpdated: {
+      text: 'Обновлено',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'medium'
+      }
+    },
 
     docFooter: {
       prev: 'Предыдущая страница',
