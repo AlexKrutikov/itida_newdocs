@@ -9,3 +9,9 @@
 .VPDoc .content-container {
     max-width: 1856px!important;
 }
+
+@media screen and (max-width: 1856px) {
+    :root {
+        --vp-layout-max-width: 1440px!important;
+    }
+}

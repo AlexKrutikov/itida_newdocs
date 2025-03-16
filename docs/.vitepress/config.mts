@@ -10,8 +10,19 @@ export default defineConfig({
   },
   title: "Itida wiki",
   description: "Itida documentation",
+
+  markdown: { 
+    toc:{ 
+      level:[2,3],
+    }
+  },
+
+  cleanUrls: true,
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    outline: [1,2],
+
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
@@ -24,6 +35,8 @@ export default defineConfig({
     lightModeSwitchTitle: 'Включить светлую тему',
     darkModeSwitchTitle: 'Включить темную тему',
     outlineTitle: 'На этой странице',
+
+    
 
     docFooter: {
       prev: 'Предыдущая страница',
