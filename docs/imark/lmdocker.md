@@ -2,7 +2,7 @@
 title: Установка Локального Модуля Честного знака в docker
 description: Описание установки ЛМ ЧЗ в docker
 published: true
-date: 2025-03-07T12:01:25.018Z
+date: 2025-03-18T14:27:18.504Z
 tags: честныйзнак, docker, локальный модуль
 editor: markdown
 dateCreated: 2025-03-06T12:12:49.300Z
@@ -109,9 +109,18 @@ docker info
 
 ![ext_ini.png](/images/imark/lmdocker/ext_ini.png){.align-center}
 
-А изменение портов для связи 5996 и 5997 производится в файле "docker-compose.yaml"
+А изменение портов для связи 5996 и 5997 производится в файле `docker-compose.yaml`
 
 ![compose_file.png](/images/imark/lmdocker/compose_file.png){.align-center}
+
+Так же в файле `docker-compose.yaml` можно указать используемый образ ЛМ ЧЗ в реквизите **image**. Для использования версии 1.3.0 необходимо стандартное значение заменить на 
+```yml
+image: registry.itida.ru/regime:1.3.0-366-ubuntu22_amd64
+```
+для использования самой последней версии образа можно указать вариант **latest**:
+```yml
+image: registry.itida.ru/regime:latest
+```
 
 Перед запуском модулей требуется [скачать архив](/images/imark/lmdocker/regime-docker.zip) с преднастроенными папками и файлом docker-compose для развертывания контейнеров и распаковать содержимое в каталог на жестком диске (например на диск D).
 ![docker_archive.png](/images/imark/lmdocker/docker_archive.png){.align-center}
@@ -139,3 +148,35 @@ cd D:\regime
 ![config_changed.png](/images/imark/lmdocker/config_changed.png){.align-center}
 
 На этом процедура развертывания завершена и можно переходить к настройкам Айтида iMark для установки связи с модулями и производить инициализацию модулей: [Подключение локального модуля к Айтида iMark](/imark#подключение-локального-модуля-честного-знака)
+
+# Обновление локального модуля в среде Docker
+Для обновления ЛМ ЧЗ, развернутого в среде Docker необходимо в файле `docker-compose.yaml` изменить версию используемого образа на новую. К примеру, для обновления с версии 1.2.1-340 до версии 1.3.0-366 необходимо заменить тэг в имени используемого образа со старого значения `1.2.1-340-ubuntu22_amd64` на новое значение `1.3.0-366-ubuntu22_amd64`.
+
+![change_imageversion.png](/images/imark/lmdocker/change_imageversion.png){.align-center}
+
+Имена тэгов совпадают с именами образов:
+![tags.png](/images/imark/lmdocker/tags.png){.align-center}
+
+Так же допустим вариант указания тэга **latest** для обновления на самую актуальную версию образа.
+
+![tag_latest.png](/images/imark/lmdocker/tag_latest.png){.align-center}
+
+После изменения версии образа в файле compose необходимо в командной строке перейти в каталог, содержащий этот compose файл и выполнить следующие команды:
+
+`docker compose pull` - для скачивания указанных в файле образов контейнеров
+
+![pull_images2.png](/images/imark/lmdocker/pull_images2.png){.align-center}
+
+
+`docker compose stop` - для остановки запущенных контейнеров
+
+![docker_stop.png](/images/imark/lmdocker/docker_stop.png){.align-center}
+
+`docker compose ud -d` - для запуска контейнера с использованием новых образов
+
+![docker_up2.png](/images/imark/lmdocker/docker_up2.png){.align-center}
+
+После запуска контейнеров необходимо произвести процедуру инициализации локальных модулей.
+
+> Если после обновления образов инициализация локальных модулей не проходит и статус модуля отображается как "Не сконфигурирован", то рекомендуется произвести [чистую установку ЛМ ЧЗ в среде docker](/imark/lmdocker#настройка-и-запуск-локального-модуля-системы-честный-знак)
+{.is-warning}
