@@ -3,23 +3,23 @@
 layout: home
 
 hero:
-  name: "Itida wiki"
-  text: "Itida documentation"
-  tagline: My great project tagline
+  name: "Айтида"
+  text: "Wiki"
+  tagline: Документация по Айтида 4
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Документация
+      link: /home
     - theme: alt
-      text: API Examples
+      text: API Айтида
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Крутотень 1
+    details: Самая лучшая программа на планете
+  - title: Крототень 2
+    details: Гибкая кастомизация под любые нужны
+  - title: Крутотень 3
+    details: Низкая стоимость владения
 ---
 
