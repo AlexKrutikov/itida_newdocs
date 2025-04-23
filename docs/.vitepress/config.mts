@@ -44,8 +44,8 @@ export default defineConfig({
     },
 
     docFooter: {
-      prev: 'Предыдущая страница',
-      next: 'Следующая страница'
+      prev: 'Предыдущий раздел',
+      next: 'Следующий раздел'
     },
 
     sidebar: sidebar,
