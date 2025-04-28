@@ -20,6 +20,7 @@ export default defineConfig({
   },
 
   cleanUrls: true,
+  ignoreDeadLinks:true,
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
