@@ -4,6 +4,7 @@ import { navbar } from './navbar.ts';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/itida_newdocs/',
   locales: {
     root: {
       label: 'Русский',
