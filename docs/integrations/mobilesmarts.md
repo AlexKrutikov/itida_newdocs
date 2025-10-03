@@ -1,9 +1,9 @@
 ---
 title: Интеграция Айтида и Mobile Smarts
-description: Описание и настройка интеграции с ПО Mobile Smarts
+description: Описание и настройка интеграции с ПО Mobile Smarts (Клеверенс)
 published: true
-date: 2022-12-21T09:31:10.247Z
-tags: тсд, mobile smarts, cleverence, мобильное по
+date: 2025-09-11T11:04:50.582Z
+tags: тсд, mobile smarts, cleverence, мобильное по, клеверенс
 editor: markdown
 dateCreated: 2022-12-21T07:46:21.086Z
 ---
