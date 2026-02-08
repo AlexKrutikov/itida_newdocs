@@ -2,7 +2,7 @@
 title: Руководства по интеграции Айтида с различными системами
 description: Интеграции
 published: true
-date: 2024-12-12T13:14:14.132Z
+date: 2026-02-03T10:09:01.101Z
 tags: интеграция
 editor: markdown
 dateCreated: 2022-08-18T09:14:01.130Z
@@ -39,9 +39,14 @@ dateCreated: 2022-08-18T09:14:01.130Z
 {.links-list}
 
 ## Платежные системы
-- [:blue_book: Сбербанк *Прямая интеграция с платежной системой от Сбербанка*](/integrations/paysystem-sber)
-- [:blue_book: Прочие платежные системы *Интеграция со всеми остальными платежными системами*](/integrations/paysystem-all)
+- [:blue_book: Сбербанк *Интеграция с платежной системой от Сбербанка*](/integrations/paysystem-sber)
+- [:blue_book: Arcus2 *Интеграция с платежной системой работающей по протоколу Arcus2*](/integrations/paysystem-arcus2)
+- [:blue_book: UCS *Интеграция с эквайрингом от UCS*](/integrations/paysystem-ucs)
+- [:blue_book: PosConnector *Интеграция с эквайрингом через драйвер PosConnector*](/integrations/paysystem-posconnector)
+- [:blue_book: DualConnector *Интеграция с эквайрингом через драйвер DualConnector*](/integrations/paysystem-dualconnector)
 - [:blue_book: СБП терминал оплаты Mertech *Подключение QR дисплея от компании Mertech для приёма оплат по СБП*](/integrations/mertech-qr)
+- [:blue_book: QR-код от Яндекс Пэй *Руководство по настройке интеграции с оплатой по QR от Яндекс Пэй*](/integrations/qrbyyandexpay)
+- [:blue_book: Прочие платежные системы *Интеграция со всеми остальными платежными системами*](/integrations/paysystem-all)
 {.links-list}
 
 ## Мобильные системы
