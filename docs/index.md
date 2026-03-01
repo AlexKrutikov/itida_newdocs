@@ -2,6 +2,11 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
+head:
+  - - meta
+    - name: algolia-site-verification
+      content: F38DD2DE9114612D
+
 hero:
   name: "Айтида"
   text: "Wiki"
