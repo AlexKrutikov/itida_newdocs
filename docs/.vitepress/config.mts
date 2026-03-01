@@ -68,7 +68,7 @@ export default defineConfig({
       options: {
         appId: '5MRRJJ5O31',
         apiKey: '0273e19cae1c72b6c946d3ae03057252',
-        indexName: 'wiki_itida_ru_5mrrjj5o31_pages.tmp',
+        indexName: 'nwe wiki pages',
         locales: {
           root: { // используйте ключ `root`, если хотите перевести локаль по умолчанию
             translations: {
