@@ -64,11 +64,11 @@ export default defineConfig({
     ],
 
     search: {
-      provider: 'algolia',
+      provider: 'local',
       options: {
-        appId: '5MRRJJ5O31',
-        apiKey: '0273e19cae1c72b6c946d3ae03057252',
-        indexName: 'nwe wiki pages',
+        // appId: '5MRRJJ5O31',
+        // apiKey: '0273e19cae1c72b6c946d3ae03057252',
+        // indexName: 'nwe wiki pages',
         locales: {
           root: { // используйте ключ `root`, если хотите перевести локаль по умолчанию
             translations: {
