@@ -2,13 +2,16 @@
 title: Раздел для разработчиков
 description: 
 published: true
-date: 2025-04-24T14:21:33.869Z
+date: 2026-03-02T09:57:57.783Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-07T12:41:14.891Z
 ---
 
-# Памятка по командам вычислителя
+- [:notebook: Описание языка вычислителя *Краткое описание языка вычислителя скриптов Айтида*](/docs/short-lang)
+{.links-list}
+
+## дополнительные материалы
 
 - [:blue_book: Работа с JSON *Команды СФОРМИРОВАТЬ_VJSON и РАЗОБАРТЬ_VJSON*](/dev/json)
 - [:blue_book: Обёртка для 1С компонент](/dev/wrapper)
